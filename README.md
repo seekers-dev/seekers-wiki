@@ -1,1 +1,1 @@
-# wiki
+<h1 align=center>Seekers Wiki 📖</h1>

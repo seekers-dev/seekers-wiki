@@ -1,6 +1,9 @@
-The following is the default configuration, as in [`default_config.ini`](../blob/master/default_config.ini):
+# Config
+
+Games are hosted with a configuration. You can change the configuration by editing the config file. In the description below you can see which properties change what aspect.
 
 ## Global
+
 ```ini
 [global]
 # wait until every AI has submitted its orders before performing the next game tick [bool]
@@ -22,6 +25,7 @@ color-threshold=0.1
 ```
 
 ## Map
+
 ```ini
 [map]
 # map dimensions [int]
@@ -30,6 +34,7 @@ height=768
 ```
 
 ## Camp
+
 ```ini
 [camp]
 # camp dimensions [int]
@@ -38,6 +43,7 @@ height=55
 ```
 
 ## Physical
+
 ```ini
 [physical]
 # friction of any physical [float]
@@ -45,6 +51,7 @@ friction=.02
 ```
 
 ## Seeker
+
 ```ini
 [seeker]
 # length of the acceleration vector of a seeker [float]
@@ -60,6 +67,7 @@ mass=1
 ```
 
 ## Goal
+
 ```ini
 [goal]
 # time until a goal gets scored [int]
@@ -71,6 +79,7 @@ mass=.5
 ```
 
 ## Flags
+
 ```ini
 [flags]
 # enable experimental friction, as implemented by joendter [bool]
