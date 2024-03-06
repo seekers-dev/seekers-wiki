@@ -2,7 +2,7 @@
 
 Players compete by controlling little circles called "seekers". Every player has an underlying program, its AI. The player with the most points after [`global.playtime`](https://github.com/seekers-dev/seekers/wiki/Configuration#global) wins.
 
-Players recieve points by bringing balls, so called "goals", to their camp.
+Players receive points by bringing balls, so called "goals", to their camp.
 
 ![Ingame picture](https://user-images.githubusercontent.com/37810842/207417325-30e82c8b-b53b-44e7-9d41-ca431dc579e2.png)
 
@@ -41,7 +41,7 @@ Seekers have two attributes:
 
 Seekers always accelerate towards their target.
 
-Their magnet can attract (positive magent strength) or repel (negative magnet strength) goals. This is useful when transporting goals to the camps.
+Their magnet can attract (positive magnet strength) or repel (negative magnet strength) goals. This is useful when transporting goals to the camps.
 The magnet is considered "on" if its strength is unequal to zero.
 
 ### Magnet Slowdown
@@ -51,14 +51,14 @@ As long as the magnet of as seeker is turned on, its [`seeker.thrust`](config#se
 ### Disabled Seekers
 
 If two seekers collide, they are at risk of getting disabled.
-* If you have your magnet turned on, you will get disabled.
+* Seekers with their magnet turned on will always get disabled.
 * If both have the magnet turned off, both will get disabled.
 
 Disabled seekers don't accelerate and their magnet turns off. Seekers are disabled for [`seeker.disabled-time`](config#seeker) ticks.
 
 ## Camps
 
-Every player has exacly one camp placed on the map. It doesn't interact with physicals whatsoever and can be considered an overlay for a section of the map. 
+Every player has exactly one camp placed on the map. It doesn't interact with physicals whatsoever and can be considered an overlay for a section of the map. 
 The size of a camp is defined [here](config#camp).
 
 They are important for scoring points as explained below:
@@ -67,7 +67,7 @@ They are important for scoring points as explained below:
 
 Goals are physicals. 
 
-A player recieves a point when a goal stays in their camp for [`goal.scoring-time`](config#goal) ticks.
+A player receives a point when a goal stays in their camp for [`goal.scoring-time`](config#goal) ticks.
 * The time spent in a camp is accumulated, that means it can temporarily exit the camp.
 * If the goal enters another player's camp, its timer resets.
 
