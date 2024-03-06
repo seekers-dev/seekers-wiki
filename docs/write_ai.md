@@ -2,7 +2,7 @@
 
 ## Create your file
 
-Create a file that starts with `ai` and ends with `.py`. Everything between is up to you and should represent the name of your team.
+Create a file whose filename starts with `ai` and ends with `.py`. Everything between is up to you and should represent the name of your team.
 
 At the very top of your file, import the default definitions.
 
@@ -25,13 +25,13 @@ Inside the function, you can write your code.
 
 ## Set color
 
-You can specify the color of your ai by adding the following code at the top of your file.
+You can specify the color of your AI by adding the following code at the top of your file.
 
 ```py
 __color__ = (255, 0, 0)
 ```
 
-This will result in a red color. The color property uses rgb values.
+This will result in a red color. The color property uses RGB values.
 
 ## Full code and other examples
 
