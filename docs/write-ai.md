@@ -1,4 +1,8 @@
-# Write an AI
+---
+layout: page
+title: Write an AI
+permalink: /write-ai/
+---
 
 ## Create your file
 

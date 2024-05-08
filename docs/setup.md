@@ -1,3 +1,9 @@
+---
+layout: page
+title: Setup
+permalink: /setup/
+---
+
 # Seekers Python
 
 ## Requirements
