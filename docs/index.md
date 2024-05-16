@@ -8,7 +8,7 @@ layout: home
 <h1 align="center">Welcome to Seekers!</h1>
 
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=githubactions,maven,gradle,linux,java,kotlin,python,pytorch,tensorflow" alt="Skill Icons" />
+    <img src="https://skillicons.dev/icons?i=githubactions,maven,gradle,linux,java,kotlin,python" alt="Skill Icons" />
     <p>Learn to code with games.</p>
 </div>
 
