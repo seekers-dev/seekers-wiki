@@ -10,13 +10,19 @@
 
 ### Install requirements
 
+Install ruby packages:
+
 ```shell
-sudo gem install jekyll bundler rake rexml webrick jekyll-feed jekyll-seo-tag just-the-docs webrick
+sudo gem install jekyll bundler rake rexml webrick jekyll-feed jekyll-seo-tag just-the-docs webrick jekyll-spaceship
 ```
+
+Navigate to directory:
 
 ```shell
 cd docs
 ```
+
+Install dependencies:
 
 ```shell
 bundler install
