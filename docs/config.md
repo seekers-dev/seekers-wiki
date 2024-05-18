@@ -2,6 +2,7 @@
 layout: page
 title: Config
 permalink: /config/
+nav_order: 10
 ---
 
 Games are hosted with a configuration. You can change the configuration by editing the config file. In the description below you can see which properties change what aspect.

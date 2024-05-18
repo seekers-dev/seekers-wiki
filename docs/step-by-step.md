@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Step by Step Introduction
-permalink: /introduction/
+permalink: /step-by-step/
+nav_order: 4
 ---
 
 This tutorial will take you, step by step, from installing the necessary files for Seekers to creating your first simple AI.

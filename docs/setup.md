@@ -2,6 +2,7 @@
 layout: page
 title: Setup
 permalink: /setup/
+nav_order: 3
 ---
 
 # Seekers Python

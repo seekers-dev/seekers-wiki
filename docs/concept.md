@@ -2,6 +2,7 @@
 layout: page
 title: Concept
 permalink: /concept/
+nav_order: 2
 ---
 
 Players compete by controlling little circles called "seekers". Every player has an underlying program, its AI. The player with the most points after [`global.playtime`](https://github.com/seekers-dev/seekers/wiki/Configuration#global) wins.
