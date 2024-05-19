@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Why Seekers?
-parent: Introduction
 nav_order: 1
 ---
 
