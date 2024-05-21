@@ -1,10 +1,12 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Why Seekers?
+nav_order: 1
 ---
 
-<img alt="Seekers Game Preview" src="../images/Seekers.png" align="right" width="50%">
+# Why Seekers?
+
+<img alt="Seekers Game Preview" src="../assets/images/Seekers.png" align="right" width="50%">
 
 Seekers is an interactive game that combines the thrill of gameplay with the educational aspect of programming. By writing Python-based AI algorithms, players can participate in exciting battles and engage in strategic decision-making. The game offers a stimulating environment for honing programming skills, problem-solving abilities, and algorithmic thinking.
 

@@ -10,13 +10,19 @@
 
 ### Install requirements
 
+Install ruby packages:
+
 ```shell
-sudo gem install jekyll bundler rake rexml webrick jekyll-feed jekyll-seo-tag minima
+sudo gem install jekyll bundler rake rexml webrick jekyll-feed jekyll-seo-tag just-the-docs webrick jekyll-spaceship
 ```
+
+Navigate to directory:
 
 ```shell
 cd docs
 ```
+
+Install dependencies:
 
 ```shell
 bundler install
@@ -27,3 +33,5 @@ bundler install
 ```shell
 bundler exec jekyll serve
 ```
+
+You can view the website on `http://127.0.0.1:4000/`.
