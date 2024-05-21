@@ -26,7 +26,6 @@ url: "https://github.com/seekers-dev" # the base hostname & protocol for your si
 
 # Build settings
 remote_theme: just-the-docs/just-the-docs
-theme: just-the-docs
 plugins:
   - jekyll-spaceship
 
