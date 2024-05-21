@@ -31,10 +31,10 @@ plugins:
 
 # Aux links for the upper right navigation
 aux_links:
-  "Seekers on GitHub":
-    - "//github.com/seekers-dev"
   "Seekers on Discord":
     - "//discord.gg/gRaTCgDS9b"
+  "Seekers on GitHub":
+    - "//github.com/seekers-dev"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: yes
