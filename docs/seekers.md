@@ -6,11 +6,11 @@ nav_order: 2
 
 # The Game
 
-Players compete by controlling little circles called "seekers". Every player has an underlying program, its AI. The player with the most points after [`global.playtime`](https://github.com/seekers-dev/seekers/wiki/Configuration#global) wins.
+Players compete by controlling little circles called "seekers". Every player has an underlying program, its AI. The player with the most points after `global.playtime` wins.
 
 Players receive points by bringing balls, so called "goals", to their camp.
 
-![Ingame picture](https://user-images.githubusercontent.com/37810842/207417325-30e82c8b-b53b-44e7-9d41-ca431dc579e2.png)
+<img alt="Game Preview" src="assets/images/GamePreview.png" width="50%" align="right">
 
 In this image you see two AIs competing. Each AI gets assigned a color. 
 * The colored squares are the camps of their respective AI.
