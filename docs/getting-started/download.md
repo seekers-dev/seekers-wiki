@@ -13,7 +13,7 @@ Download the latest release [here](https://github.com/seekers-dev/seekers-py/rel
 
 ## Checkout Examples
 
-You can download the latest examples [here](https://github.com/seekers-dev/seekers-py/tree/master/examples). They are useful for testing the binaries, but they are not required to ruhttps://githubn the project.
+You can download the latest examples [here](https://github.com/seekers-dev/seekers-py/tree/master/examples). They are useful for testing the binaries, but they are not required to run the project.
 
 ## Testing Binaries
 
