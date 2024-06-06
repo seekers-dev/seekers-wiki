@@ -13,7 +13,7 @@ One might think of Seekers as a "zero player game": Once the game starts, player
 
 The way to "play" Seekers is to program a bot function (in a sense some kind of AI) that will control your team of Seekers. Players gain points by having their Seekers transport small dots, the so-called "goals", into their own Camp, which is marked by a square with the same color as the team. To accomplish this goal, Seekers can be given a "target" to move to, but they also have a magnet which can be turned attractive or repulsive to goals, depending on the use case.
 
-The game has a lot more to discover, but this sums it up for the first part. To go more into detail, look at [Concept](concept), which explains all mechanics you need to know. If you want to know more about the game's parameters, see [Config](config).
+The game has a lot more to discover, but this sums it up for the first part. To go more into detail, look at the pages below [More Resources](../more-resources/index), namely [Seeker](../more-resources/seeker.md), [Goal](../more-resources/goal.md), [Player](../more-resources/player.md) and [Camp](../more-resources/camp.md), which explain all mechanics you need to know. If you want to know more about the game's parameters, see [Config](../more-resources/config.md).
 
 ## Creating an AI program
 
@@ -38,7 +38,7 @@ def decide(own_seekers: list[Seeker], other_seekers: list[Seeker], all_seekers: 
 Note that the "arguments" of this function, i.e. the data it will make its decisions on, are on the top line after the `def` keyword, initiating a function definition.
 After this top line, you could do all sorts of calculations, loops or alternatives (as explained later) that modify the target or magnet state of your seekers. To conclude your decide function, it "returns" your seekers, i.e. it tells the game what you want to do in this tick. Everything that is contained in your function _has to_ be indented, usually by 4 space characters.
 
-This is everything your AI definitely _needs_. It won't win you games though since we trained it to do, well, nothing (yet). To test our AI, don't forget to save the file and let's have a look at a command we have used earlier:
+This is everything your AI definitely _needs_. It won't win you games though since we trained it to do, well, nothing (yet). To test our AI, don't forget to save the file and let's have a look at a command we are about to use:
 
 ```shell
 python run_seekers.py ./[AI1 path] ./[AI2 path]
@@ -101,7 +101,7 @@ Let's make a plan first: Now our strategy will be to have the seeker move, with 
 dist = world.torus_distance(s0.position, g0.position)
 ```
 
-We save the result in a variable called `dist` for later use. Note that `world.torus_distance()` takes, exactly as the right side of a "target setting" did, _positions_, not _objects_ as arguments. Also note that this calculation is harder than simply subtracting x- and y-values of the positions since the game is played on a torus, where distance calculation is not as trivial. For more information, see the [Concept page about Physicals](concept#physicals).
+We save the result in a variable called `dist` for later use. Note that `world.torus_distance()` takes, exactly as the right side of a "target setting" did, _positions_, not _objects_ as arguments. Also note that this calculation is harder than simply subtracting x- and y-values of the positions since the game is played on a torus, where distance calculation is not as trivial.
 
 Now we have to do different things depending on how big `dist` is. Let's start with the case where the seeker is really close to the goal it's trying to gather. To make sure the following code is executed if (and only if) the condition is fulfilled, we use Python's `if` statement (notice the indentation of everything that should be executed if the condition is met):
 
@@ -121,7 +121,7 @@ else:
 
 The code here should be straightforward in that it is similar to the snippets before. However, one might ask: "Why turn the magnet off at all?" Well, moving whilst having your magnet on has consequences:
 * Seekers with an activated magnet have lowered thrust which makes them accelerate less and therefore move at a lower speed.
-* Seekers that collide with other (friendly or opposing) seekers may get disabled for a short time, depending on each other's magnet state. (see [this](concept#disabled-seekers))
+* Seekers that collide with other (friendly or opposing) seekers may get disabled for a short time, depending on each other's magnet state. (see [this](../more-resources/seeker.md#disabled-seekers))
 
 So, if you don't _need_ your magnet right now, it is usually a good idea to turn it off. Save again and test the bot. See? This strategy is already a bit effective - speaking for the single seeker that is doing anything. Let's get the others out of their sleep!
 
@@ -191,4 +191,4 @@ def decide(own_seekers: list[Seeker], other_seekers: list[Seeker], all_seekers: 
 
 It might seem like this is everything there is to discover about Seekers, but this is only the beginning! Your possibilities are only limited by your imagination: We haven't touched the repelling magnet yet, we didn't optimize goal selection, all our seekers are doing the same thing... These are just some thought provokers of common ideas, but feel free to also try crazy things! And don't forget to join [our official Discord server](https://discord.gg/gRaTCgDS9b) for news, support and a welcoming community!
 
-Remember that the wiki sites [Concept](concept) and [Config](config) are reliable sources for what mechanics and possibilities exist in Seekers. If you can't get enough and are confident enough to read bigger pieces of code, also feel free to have a look through the ["seekers_types.py" file](https://github.com/seekers-dev/seekers-py/blob/master/seekers/seekers_types.py). If you have questions about Python itself, the [Python Documentation](https://www.python.org/doc/) might be worth a look. And if you decide to learn even more Python outside of Seekers, we recommend you Al Sweigart's (free if read as e-books!) [Books to learn Python](https://inventwithpython.com/).
+Remember that the wiki sites below [More Resources](../more-resources/index.md) and especially [Config](../more-resources/config.md) are reliable sources for what mechanics and possibilities exist in Seekers. If you can't get enough and are confident enough to read bigger pieces of code, also feel free to have a look through the ["seekers_types.py" file](https://github.com/seekers-dev/seekers-py/blob/master/seekers/seekers_types.py). If you have questions about Python itself, the [Python Documentation](https://www.python.org/doc/) might be worth a look. And if you decide to learn even more Python outside of Seekers, we recommend you Al Sweigart's (free if read as e-books!) [Books to learn Python](https://inventwithpython.com/).
